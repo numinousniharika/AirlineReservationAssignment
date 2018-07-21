@@ -21,5 +21,6 @@ public:
 	std::string mFirstName;
 	std::string mLastName;
 	std::string mEmail;
+	
 };
 

@@ -6,6 +6,8 @@ public:
 	Ticket();
 	~Ticket();
 
+	void Display();
+
 	int TicketId;
 	std::string PassengerEmail;
 	std::string FlightName;

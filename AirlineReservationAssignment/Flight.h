@@ -1,5 +1,6 @@
 #pragma once
 #include<string>
+#include <list>
 class Flight
 {
 public:
@@ -7,6 +8,7 @@ public:
 	~Flight() = default;
 
 	void Display();
+	static void DisplayFlights(const std::list<Flight>& flights);
 
 	std::string FlightName;
 	std::string DepCity;
