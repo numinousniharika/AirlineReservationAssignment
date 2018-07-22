@@ -15,8 +15,9 @@ Ticket::~Ticket()
 
 void Ticket::Display()
 {
-	cout << "Passenger Email: " << PassengerEmail << endl;
+	cout << "Ticket no.: " << TicketId << endl;
 	cout << "Flight Name: " << FlightName << endl;
 	cout << "Time of Departure: " << DepTime << endl;
 	cout << "Date of Departure: " << DepDate << endl;
+	cout << "Passenger Email: " << PassengerEmail << endl;
 }

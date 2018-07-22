@@ -1,6 +1,10 @@
 #pragma once
 #include<string>
 #include <list>
+#include <memory>
+
+using namespace std;
+
 class Flight
 {
 public:
@@ -8,7 +12,7 @@ public:
 	~Flight() = default;
 
 	void Display();
-	static void DisplayFlights(const std::list<Flight>& flights);
+	static void DisplayFlights(const std::list<shared_ptr<Flight>>& flights);
 
 	std::string FlightName;
 	std::string DepCity;

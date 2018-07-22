@@ -1,4 +1,5 @@
-#include <iostream>
+//Taken from https://github.com/haarcuba/cpp-text-table/blob/master/TextTable.h
+#include <iostream> 
 #include <map>
 #include <iomanip>
 #include <vector>

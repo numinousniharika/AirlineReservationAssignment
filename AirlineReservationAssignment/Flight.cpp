@@ -5,16 +5,8 @@
 #include <list>
 using namespace std;
 
-/*
-Flight::Flight()
-{
-}
 
 
-Flight::~Flight()
-{
-}
-*/
 void Flight::Display()
 {
 	TextTable t('-', '|', '+');
@@ -52,7 +44,7 @@ void Flight::Display()
 		
 }
 
-void Flight::DisplayFlights(const std::list<Flight>& flights)
+void Flight::DisplayFlights(const std::list<shared_ptr<Flight>>& flights)
 {
 	TextTable t('-', '|', '+');
 
@@ -69,13 +61,13 @@ void Flight::DisplayFlights(const std::list<Flight>& flights)
 	for (auto flight : flights)
 	{
 		t.add("");
-		t.add(flight.FlightName);
-		t.add(flight.DepCity);
-		t.add(flight.DepDate);
-		t.add(flight.DepTime);
-		t.add(flight.ArrCity);
-		t.add(flight.ArrDate);
-		t.add(flight.ArrTime);
+		t.add(flight->FlightName);
+		t.add(flight->DepCity);
+		t.add(flight->DepDate);
+		t.add(flight->DepTime);
+		t.add(flight->ArrCity);
+		t.add(flight->ArrDate);
+		t.add(flight->ArrTime);
 		t.endOfRow();
 	}
 
